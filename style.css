@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans ', sans-serif;
+}
+
+:root {
+    --background:#0E1323;
+    --text-color-ellipsis:#BBC0FF;
+    --hours-names:#FFFFFF;
+    --hover-color:#33397A;
+    --jeremy-button: #1C204B;
+    --jeremy-top:#5747EA;
+    --jeremy-text:#D8D8D8;
+    /* --jeremy-top: #1C204B; */
+    --work-background: #FF8B64;
+    --work-logo:#D96C47;
+    --play-background:#55C2E6;
+    --play-logo:#3F9CBB;
+    --study-background:#FF5E7D;
+    --study-logo:#F04667;
+    --exercise-background:#4BCF82;
+    --exercise-logo:#29BA66;
+    --social-background:#7335D2;
+    --social-logo:#5A1CBB;
+    --self-care-background:#F1C75B;
+    --self-care-logo:#E6A532;
+}
+.main-div{
+    background-color: var(--background);
+    display: flex;
+    margin: 150px;
+    margin-top: 100px;
+}
+.jeremy{
+    background-color: var(--jeremy-button);
+    border-radius: 20px;
+    width: 255px;
+    height: 518px;
+    margin-top: 30px;
+    margin-left: 190px;
+}
+
+.image-content{
+    background-color: var(--jeremy-top);
+    border-radius: 20px;
+    width: 255px;
+    height: 354px;
+    padding: 15px;
+}
+.image-content img{
+    border-radius: 50%;
+    outline: var(--hours-names);
+    outline-style: auto;
+    margin: 10px;
+    width: 100px;
+}
+.jcard-content{
+    padding: 15px;
+    margin: 20px;
+}
+
+.jcard-content p{
+    color: var(--text-color-ellipsis);
+}
+
+.jcard-content p:hover{
+    color: var(--hours-names);
+    cursor: pointer;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.card{
+    background-color: var(--work-background);
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    width: 225px;
+    height: 160px;
+    border-radius: 20px;
+    margin: 20px;
+}
+.card img{
+    width: 75px;
+    height: 60.76px;
+    float: right;
+}
+
+.card-content{
+    background-color: var(--jeremy-button);
+    padding: 15px;
+    width: auto;
+    height: 199px;
+    border-radius: 20px;
+    margin-top: 50px;
+    color: var(--text-color-ellipsis);
+    
+}
+.top{
+    display: block;
+}
+
+.card-content img{
+    width: 21px;
+    height: 5px;
+    margin: 5px;
+}
+
+.hours{
+    margin-top: 15px;
+}
