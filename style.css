@@ -29,19 +29,23 @@
     --self-care-background:#F1C75B;
     --self-care-logo:#E6A532;
 }
-.main-div{
+body{
     background-color: var(--background);
+}
+
+.main-div{
     display: flex;
-    margin: 150px;
+    margin: 10px;
     margin-top: 100px;
+    padding: 95px;  
 }
 .jeremy{
     background-color: var(--jeremy-button);
     border-radius: 20px;
     width: 255px;
     height: 518px;
-    margin-top: 30px;
-    margin-left: 190px;
+    margin-top: 30px; 
+    margin-left: 90px;
 }
 
 .image-content{
@@ -86,25 +90,37 @@
     height: 160px;
     border-radius: 20px;
     margin: 20px;
+    position: relative;
 }
 .card img{
     width: 75px;
     height: 60.76px;
     float: right;
+    position: absolute;
+    right: 10px;
 }
 
 .card-content{
     background-color: var(--jeremy-button);
-    padding: 15px;
-    width: auto;
+    color: var(--text-color-ellipsis);
+    padding: 20px;
+    width: 225;
     height: 199px;
     border-radius: 20px;
     margin-top: 50px;
-    color: var(--text-color-ellipsis);
     
 }
+.card-content:hover{
+    background-color: var(--hover-color);
+    cursor: pointer;
+}
+
 .top{
     display: block;
+}
+
+.top img:hover{
+    color: var(--jeremy-text);
 }
 
 .card-content img{
@@ -114,5 +130,39 @@
 }
 
 .hours{
-    margin-top: 15px;
+    margin-top: 25px;
+    padding: 10px;
+}
+
+.hours span{
+    font-size: 50px;
+}
+
+.hours p{
+    font-size: small;
+    text-transform: capitalize;
+}
+
+#wcard{
+    background-color: var(--work-background);
+}
+
+#pcard{
+    background-color: var(--play-background);
+}
+
+#scard{
+    background-color: var(--study-background);
+}
+
+#ecard{
+    background-color: var(--exercise-background);
+}
+
+#soCard{
+    background-color: var(--social-background);
+}
+
+#scCard{
+    background-color: var(--self-care-background);
 }
