@@ -1,8 +1,10 @@
+@import url('https://fonts.google.com/specimen/Rubik?query=rubik');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'IBM Plex Sans ', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 :root {
@@ -13,7 +15,6 @@
     --jeremy-button: #1C204B;
     --jeremy-top:#5747EA;
     --jeremy-text:#D8D8D8;
-    /* --jeremy-top: #1C204B; */
     --work-background: #FF8B64;
     --work-logo:#D96C47;
     --play-background:#55C2E6;
@@ -37,7 +38,7 @@ body{
     grid-template-columns: repeat(2, 2fr);
     gap: 1px; 
     margin-right:120px;
-    margin-top:30px;
+    margin-top:90px;
 }
 .jeremy{
     background-color: var(--jeremy-button);
@@ -45,10 +46,10 @@ body{
     width: 255px;
     height: 518px;
     margin-top: 30px; 
-    margin-left: 150px;
+    margin-left: 180px;
 }
 .jeremy h2{
-    font-family:"rubik";
+    font-family:'Rubik',sans-serif;
     color:#fff;
     margin:1px 25px;
     font-size:35px;
@@ -63,8 +64,8 @@ body{
 }
 
 .image-content img{
-    border-radius: 50%;
     outline: var(--hours-names);
+    border-radius: 50%;
     outline-style: auto;
     margin: 10px;
     width: 100px;
@@ -73,7 +74,7 @@ body{
 .image-content p{
     margin:40px 0 0 25px;
     color:#fff;
-    font-family:"rubik";
+    font-family:'Rubik', sans-serif;
 }
 
 .jcard-content{
@@ -85,7 +86,7 @@ body{
 .jcard-content p{
     padding:10px;
     color: var(--text-color-ellipsis);
-    font-family:"rubik";
+    font-family:'Rubik', sans-serif;
 }
 
 .jcard-content p:hover{
@@ -102,8 +103,8 @@ body{
 
 .card {
     position: relative;
-    width: 225px;
-    height: 240px;
+    width: 255px;
+    height: 244px;
     margin: 20px;
     border-radius: 20px;
     background-color: var(--work-background);
@@ -127,9 +128,9 @@ body{
     font-size: 18px;
     z-index: 2;
     cursor: pointer;
-    padding: 15px;
-    margin-top: 40px;
-    height:200px;
+    padding: 30px;
+    margin-top: 45px;
+    height:199px;
     color:#fff;
     transition: background-color 0.3s ease-in-out;  /*Hover effect transition*/   
   }
@@ -156,17 +157,18 @@ body{
 .hours{
     margin-top: 20px;
     padding: 10px;
-    font-family:"rubik";
+    font-family: 'Rubik', sans-serif;
 }
 
 .hours span{
     font-size: 50px;
-    font-family:"rubik";
+    /* font-family:"rubik"; */
+    font-weight: 400;
 }
 
 .hours p{
     font-size: small;
-    font-family:"rubik";
+    /* font-family:"rubik"; */
     text-transform: capitalize;
 }
 
@@ -193,3 +195,71 @@ body{
 #scCard{
     background-color: var(--self-care-background);
 }
+
+@media (max-width: 768px) {
+    .main-div {
+      flex-direction: column;
+      justify-content:center;
+      align-items:center;
+      margin:5px 100px;
+      
+    }
+
+    .jeremy{
+        width:350px;
+        height:100%;
+        margin:10px;
+        text-align:left;
+        
+    }
+
+    .jeremy h2{
+        white-space:nowrap;
+        margin-top:50px;
+        margin-left:-75px;
+        font-size:25px;
+        
+    }
+
+    .jeremy p{
+        white-space:nowrap;
+        
+    }
+
+    p{
+        margin-top:30px;
+        margin-left:10px;
+    }
+
+    .image-content{
+        display:flex;
+        height:150px;
+        width:100%;
+        justify-content:space-between;    
+        
+    }
+
+    .jcard-content{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+
+    }
+  
+    .card {
+      width: 350px;
+      height:100%;
+      margin: 10px;
+    }
+
+    .hours{
+        display:flex;
+        justify-content:space-between;
+    }
+
+    .hours p{
+        margin-top:25px;
+        font-size:15px;
+    }
+
+  }
