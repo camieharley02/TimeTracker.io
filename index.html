@@ -5,103 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="data.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Time Tracking Dashboard</title>
 </head>
 <body>
-    <div class="main-div">
-        <div class="jeremy">
-            <div class="image-content">
-                <img src="images/image-jeremy.png" alt="work">
-                <p>Report for</p>
-                <h2>Jeremy Robson</h2>
-            </div>
-            <div class="jcard-content">
-                <p>Daily</p>
-                <p>Weekly</p>
-                <p>Monthly</p>
-            </div>
-        </div>
-        <div class="card-container">
-            <div class="card" id="wcard">
-                <img class="image1" src="images/icon-work.svg" alt="work">                
-                <div class="card-content">
-                    <div class="top">
-                        <span>Work</span>
-                        <img class="image2" src="images/icon-ellipsis.svg" alt="">
-                    </div>
-                    <div class="hours">
-                        <span>32hrs</span>
-                        <p>last week-36hrs</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card" id="pcard">
-                <img src="images/icon-play.svg" alt="work">
-                <div class="card-content">
-                    <div class="top">
-                        <span>Play</span>
-                        <img src="images/icon-ellipsis.svg" alt="">
-                    </div>
-                    <div class="hours">
-                        <span>10hrs</span>
-                        <p>last week-8hrs</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card" id="scard">
-                <img src="images/icon-study.svg" alt="work">
-                <div class="card-content">
-                    <div class="top">
-                        <span>Study</span>
-                        <img src="images/icon-ellipsis.svg" alt="">
-                    </div>
-                    <div class="hours">
-                        <span>4hrs</span>
-                        <p>last week-7hrs</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card" id="ecard">
-                <img src="images/icon-exercise.svg" alt="work">
-                <div class="card-content">
-                    <div class="top">
-                        <span>Exercise</span>
-                        <img src="images/icon-ellipsis.svg" alt="">
-                    </div>
-                    <div class="hours">
-                        <span>4hrs</span>
-                        <p>last week-5hrs</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card" id="soCard">
-                <img src="images/icon-social.svg" alt="work">
-                <div class="card-content">
-                    <div class="top">
-                        <span>Social</span>
-                        <img src="images/icon-ellipsis.svg" alt="">
-                    </div>
-                    <div class="hours">
-                        <span>5hrs</span>
-                        <p>last week-10hrs</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card" id="scCard">
-                <img src="images/icon-self-care.svg" alt="work">
-                <div class="card-content">
-                    <div class="top">
-                        <span>Self Care</span>
-                        <img src="images/icon-ellipsis.svg" alt="">
-                    </div>
-                    <div class="hours">
-                        <span>2hrs</span>
-                        <p>last week-2hrs</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+   
+<div class="container">
+  <div class="profile">
+    <div class="jeremy">
+      <div class="jeremy-img">
+        <img src="images/image-jeremy.png" alt="work" id="user">
+      </div>
+        <h2><span>Report for</span> <br>
+          Jeremy Robson
+        </h2>
     </div>
+
+    <div class="jcard-content">
+        <button class="toggle-button" id="daily">Daily</button>
+        <button class="toggle-button"id="weekly">Weekly</button>
+        <button class="toggle-button"id="monthly">Monthly</button>
+    </div>
+  </div>
+  <div class="card-container">
+    
+</div>
+    <script src="data.js"></script>
 </body>
 </html>

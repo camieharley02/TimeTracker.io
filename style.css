@@ -1,232 +1,191 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Rubik', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
 }
 
 :root {
-    --background:#0E1323;
-    --text-color-ellipsis:#BBC0FF;
-    --hours-names:#FFFFFF;
-    --hover-color:#33397A;
-    --jeremy-button: #1C204B;
-    --jeremy-top:#5747EA;
-    --jeremy-text:#D8D8D8;
-    --work-background: #FF8B64;
-    --work-logo:#D96C47;
-    --play-background:#55C2E6;
-    --play-logo:#3F9CBB;
-    --study-background:#FF5E7D;
-    --study-logo:#F04667;
-    --exercise-background:#4BCF82;
-    --exercise-logo:#29BA66;
-    --social-background:#7335D2;
-    --social-logo:#5A1CBB;
-    --self-care-background:#F1C75B;
-    --self-care-logo:#E6A532;
-}
-body{
-    background-color: var(--background);
+  --body: #0E1323;
+  --profile: #1c204b;
+  --jeremy: #5747ea;
+  --jeremy-span: #BBC0FF;
+  --button: #7078c9;
+  --card-content: #1c204b;
+  --hover-color: #33397A;
+  --card-content-i: #BBC0FF;
+  --work-background: #FF8B64;
+  --play-background: #55C2E6;
+  --study-background: #FF5E7D;
+  --exercise-background: #4BCF82;
+  --social-background: #7335D2;
+  --self-care-background: #F1C75B;
+  --white: #FFF;
 }
 
-.main-div{
-    display: flex;
-    grid-template-rows: repeat(3, 2fr);
-    grid-template-columns: repeat(2, 2fr);
-    gap: 1px; 
-    margin-left:120px;
-    margin-top:90px;
-}
-.jeremy{
-    background-color: var(--jeremy-button);
-    border-radius: 20px;
-    width: 255px;
-    height: 518px;
-    margin-top: 30px; 
-    margin-left: 180px;
-    margin-right: -90px;
- }
-.jeremy h2{
-    font-family:'Rubik',sans-serif;
-    color:#fff;
-    margin:1px 25px;
-    font-size:35px;
+body {
+  background: var(--body);
+  display: grid;
+  place-items: center;
+  height: 100vh;
 }
 
-.image-content{
-    background-color: var(--jeremy-top);
-    border-radius: 20px;
-    width: 255px;
-    height: 354px;
-    padding: 15px;  
+.container {
+  display: flex;
 }
 
-.image-content img{
-    outline: var(--hours-names);
-    border-radius: 50%;
-    outline-style: auto;
-    margin: 10px;
-    width: 100px;
+.profile {
+  background-color: var(--profile);
+  height: 32.375rem;
+  width: 15.9375rem;
+  border-radius: 0.9rem;
 }
 
-.image-content p{
-    margin:40px 0 0 25px;
-    color:#fff;
-    font-family:'Rubik', sans-serif;
+.jeremy {
+  background: var(--jeremy);
+  height: 22.2rem;
+  border-radius: 0.9rem;
+  padding: 2rem;
 }
 
-.jcard-content{
-    padding: 5px;
-    margin: 15px;
-    font-size: 18px;
+.jeremy-img {
+  height: 90px;
+  width: 90px;
 }
 
-.jcard-content p{
-    padding:10px;
-    color: var(--text-color-ellipsis);
-    font-family:'Rubik', sans-serif;
+#user {
+  width: 100%;
+  height: 100%;
+  border: 4px solid var(--white);
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-.jcard-content p:hover{
-    color: var(--hours-names);
-    cursor: pointer;
+.jeremy h2 {
+  color: var(--white);
+  font-size: 2.5rem;
+  font-weight: 300;
+  padding-top: 2rem;
 }
 
-.card-container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 10px;
+.jeremy span {
+  color:var(--jeremy-span);
+  font-size: 0.9375rem;
+  font-weight: 400;
+}
+
+.jcard-content {
+  padding: 2rem;
+
+}
+
+button {
+  display: block;
+  border: none;
+  color: var(--button);
+  background: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+#weekly {
+  padding: 1rem 0;
+  color: var(--white);
+}
+
+button:hover {
+  color: var(--white);
+}
+
+.toggle-button.active {
+  color: var(--white);
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin-left: 1rem;
+  gap: 1.5rem;
 }
 
 .card {
-    position: relative;
-    width: 255px;
-    height: 244px;
-    margin: 20px;
-    border-radius: 20px;
-    background-color: var(--work-background);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    overflow: hidden; /* To hide overflow from the .card-content */
-  }
-
-.card img {
-    width: 75px; 
-    height: 60.76px;
-    float: right;
-    right: 10px;
-    z-index:1; 
-    position:relative;       
+  background-color: var(--work-background);
+  width: 16rem;
+  height: 8rem;
+  border-radius: 0.9rem;
+  background-image: url(/images/icon-work.svg);
+  background-repeat: no-repeat;
+  background-position: 10rem -1rem;
 }
 
 .card-content {
-    background-color: var(--jeremy-button);
-    border-radius: 10px;
-    position: relative;
-    font-size: 18px;
-    z-index: 2;
-    cursor: pointer;
-    padding: 30px;
-    margin-top: 45px;
-    height:199px;
-    color:#fff;
-    transition: background-color 0.3s ease-in-out;  /*Hover effect transition*/   
-  }
-
+  padding: 2rem;
+  background-color: var(--card-content);
+  height: 13rem;
+  border-radius: 0.9rem;
+  margin-top: 2.5rem;
+  color: var(--white);
+}
 .card-content:hover{
-    background-color: var(--hover-color);
-    cursor: pointer;
+  background: var(--hover-color);
 }
-
-.top{
-    display: block;
-    font-size: 18px;
+.content-wrapper{
+  display: inline-flex;
+  padding-bottom: 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 8.1875rem;
 }
-
-
-.top img:hover{
-    color: var(--jeremy-text);
+.card-content span {
+  font-size: 1.125rem;
+  font-weight: 500;
 }
-
-.card-content img{
-    width: 21px;
-    height: 5px;
-    margin: 5px; 
+.card-content i{
+  width: 1rem;
+  height: 0.3125rem;
+  color: var(--card-content-i);
+  cursor: pointer; 
 }
-
+.card-content i:hover{
+  color:var(--white);
+}
 .hours{
-    margin-top: 20px;
-    padding: 10px;
-    font-family: 'Rubik', sans-serif;
+  margin-top: 2rem;
 }
-
-.hours span{
-    font-size: 56px;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
+.hours h1{
+  font-size: 3.5rem;
+  font-weight: 300;
 }
-
 .hours p{
-    font-size: 15px;
-    font-family: 'Rubik', sans-serif;
-    text-transform: capitalize;
+  padding-top: 1rem;
 }
 
-#wcard{
-    background-color: var(--work-background);
+.card:nth-child(2) {
+  background: var(--play-background) url(/images/icon-play.svg) no-repeat 10rem -1rem;
 }
 
-#pcard{
-    background-color: var(--play-background);
+.card:nth-child(3) {
+  background: var(--study-background) url(/images/icon-study.svg) no-repeat 10rem -1rem;
 }
 
-#scard{
-    background-color: var(--study-background);
+.card:nth-child(4) {
+  background: var(--exercise-background) url(/images/icon-exercise.svg) no-repeat 10rem -0.5rem;
 }
 
-#ecard{
-    background-color: var(--exercise-background);
+.card:nth-child(5) {
+  background: var(--social-background) url(/images/icon-social.svg)no-repeat 10rem -1rem;
 }
 
-#soCard{
-    background-color: var(--social-background);
+.card:nth-child(6) {
+  background: var(--self-care-background) url(/images/icon-self-care.svg)no-repeat 10rem -1rem;
 }
 
-#scCard{
-    background-color: var(--self-care-background);
-}
-
-@media (max-width: 1440px) {
-    
-    .main-div{
-        display: flex;
-        grid-template-rows: repeat(3, 2fr);
-        grid-template-columns: repeat(2, 2fr);
-        gap: 1px; 
-        margin-top:90px;
-    }
-    .jeremy{
-        background-color: var(--jeremy-button);
-        border-radius: 20px;
-        width: 255px;
-        height: 518px;
-        margin-top: 30px; 
-        margin-left: 10px;
-        margin-right: -128px;
-    }
-    .card-container{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: 9px;
-    }
-}
 /* --------phone------- */
 
-@media (max-width: 768px) and (min-width: 375px) {
+@media (max-width: 767px) and (min-width: 375px) {
     .main-div {
       flex-direction: column;
       justify-content:center;
@@ -269,9 +228,22 @@ body{
         display:flex;
         justify-content:space-around;
         bottom: 5px;
-        margin-top: -20px;
     }
-  
+    
+    button{
+        outline: none;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+    }
+    .jcard-content button p{
+        display: inline;
+        padding:10px;
+        color: var(--text-color-ellipsis);
+        font-family:'Rubik', sans-serif;
+        font-size: 18px;
+        
+    }
     .card {
       width: 327px;
       height:160px;
