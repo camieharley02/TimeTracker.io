@@ -132,18 +132,14 @@ button:hover {
 .card-content:hover{
   background: var(--hover-color);
 }
-.content-wrapper{
-  display: inline-flex;
-  padding-bottom: 0px;
-  justify-content: center;
-  align-items: center;
-  gap: 8.1875rem;
-}
 .card-content span {
   font-size: 1.125rem;
   font-weight: 500;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
-.card-content i{
+.card-content i{                          
   width: 1rem;
   height: 0.3125rem;
   color: var(--card-content-i);
@@ -225,7 +221,6 @@ button:hover {
 
     }
     .content-wrapper{
-      display: inline-flex;
       padding-bottom: 0;
       gap: 13.4375rem;
     }

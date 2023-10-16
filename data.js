@@ -24,7 +24,6 @@ function createCardElement() {
       <div class="card-content">
         <div class="content-wrapper">
           <span>${title}</span>
-          <i class="fa-solid fa-ellipsis"></i>
         </div>
         <div class="hours">
             <h1>0hrs</h1>
@@ -48,7 +47,7 @@ function updateTime(timeframe) {
         const { current, previous, timeframe: cardTimeframe } = timeTrackingData[i].timeframes[timeframe];
         const [titleElement, timeElement, previousElement] = card.querySelectorAll('span, h1, p');
 
-        titleElement.innerHTML = `${titleElement.textContent}`;
+        titleElement.innerHTML = `${titleElement.textContent} <i class= "fas fa-ellipsis-h"></i> `;
         timeElement.textContent = `${current}hrs`;
         previousElement.textContent = `${timePeriodText} - ${previous}hrs`;
     });
