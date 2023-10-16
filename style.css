@@ -186,27 +186,31 @@ button:hover {
 /* --------phone------- */
 
 @media (max-width: 767px) and (min-width: 375px) {
-    .main-div {
+  /* .container {
+      width: 20.4375rem;
+      display: flex;
       flex-direction: column;
-      justify-content:center;
-      align-items:center;
-      margin:5px 100px;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 0.25rem;
       
+    }
+    .profile{
+      width: 20.4375rem;
+      height: 12.6875rem;
+      flex-shrink: 0;
     }
 
     .jeremy{
-        width:327px;
-        height:203px;
-        margin:10px;
-        text-align:left;
-        
-    }
-
-    .jeremy h2{
+    width: 20.4375rem;
+    height: 8.3125rem;
+    flex-shrink: 0;
+    } 
+      
+      .jeremy h2{
+        padding-top: 1rem;
+        display: inline;
         white-space:nowrap;
-        margin-top:50px;
-        margin-left:-75px;
-        font-size:25px;
         
     }
 
@@ -263,6 +267,6 @@ button:hover {
 
     .hours span{
         font-size: 32px;
-    }
+    } */
 
   }
