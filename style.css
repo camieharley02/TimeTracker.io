@@ -192,7 +192,6 @@ button:hover {
   .profile{
     width: 20.4375rem;
     height: 12.6875rem;
-
   }
   .jeremy{
     height: 8.3125rem;
@@ -214,7 +213,8 @@ button:hover {
   
   .card-container{
       grid-template-columns: repeat(1, 1fr);
-      gap: 4rem;
+      gap: 3rem;
+      margin: 1rem 0 1rem 0;
     }
     .card{
       width: 20.4375rem;
@@ -224,14 +224,13 @@ button:hover {
 
     }
     .content-wrapper{
-
+      display: inline-flex;
     }
     .hours{
       display: inline-flex;
-      height: 2.375rem;
       justify-content: center;
-      align-items: center;
-      gap: 4.4375rem;
+      gap: 3rem;
+      margin-top: 0;
 
     }
     .hours h1{
