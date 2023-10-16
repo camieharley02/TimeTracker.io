@@ -51,7 +51,7 @@ body {
 }
 
 .jeremy-img {
-  height: 90px;
+  height: 90px; 
   width: 90px;
 }
 
@@ -185,88 +185,59 @@ button:hover {
 
 /* --------phone------- */
 
-@media (max-width: 767px) and (min-width: 375px) {
-  /* .container {
-      width: 20.4375rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 0.25rem;
-      
-    }
-    .profile{
-      width: 20.4375rem;
-      height: 12.6875rem;
-      flex-shrink: 0;
-    }
-
-    .jeremy{
+@media (min-width: 320px) and (max-width: 420px) {
+  .container{
+    display: block;
+  }  
+  .profile{
     width: 20.4375rem;
+    height: 12.6875rem;
+
+  }
+  .jeremy{
     height: 8.3125rem;
-    flex-shrink: 0;
-    } 
-      
-      .jeremy h2{
-        padding-top: 1rem;
-        display: inline;
-        white-space:nowrap;
-        
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
 
-    .jeremy p{
-        white-space:nowrap;
-        margin-top:30px;
-        margin-left:10px;
+  }
+  .jeremy h2{
+    font-size: 1.5rem;
+    padding: 0 0 0 1rem;
+  }
+  .jcard-content{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5rem ;
+  }
+  
+  .card-container{
+      grid-template-columns: repeat(1, 1fr);
+      gap: 4rem;
     }
+    .card{
+      width: 20.4375rem;
+    }
+    .card-content{
+      height: 7.625rem;
 
-    .image-content{
-        display:flex;
-        height:133px;
-        width: 327px;;
-        justify-content:space-between;    
-        
     }
+    .content-wrapper{
 
-    .jcard-content{
-        display:flex;
-        justify-content:space-around;
-        bottom: 5px;
     }
-    
-    button{
-        outline: none;
-        cursor: pointer;
-        background-color: transparent;
-        border: none;
-    }
-    .jcard-content button p{
-        display: inline;
-        padding:10px;
-        color: var(--text-color-ellipsis);
-        font-family:'Rubik', sans-serif;
-        font-size: 18px;
-        
-    }
-    .card {
-      width: 327px;
-      height:160px;
-      margin: 10px;
-    }
-
     .hours{
-        display:flex;
-        justify-content:space-between;
-        margin-top: 1px;
-    }
+      display: inline-flex;
+      height: 2.375rem;
+      justify-content: center;
+      align-items: center;
+      gap: 4.4375rem;
 
+    }
+    .hours h1{
+      font-size: 2rem;
+    }
     .hours p{
-        margin-top:9px;
-        font-size:15px;
+      font-size: 0.9375rem;
     }
-
-    .hours span{
-        font-size: 32px;
-    } */
-
   }
