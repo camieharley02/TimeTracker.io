@@ -218,6 +218,7 @@ button:hover {
     }
     .card{
       width: 20.4375rem;
+      background-position: 14rem -1rem;
     }
     .card-content{
       height: 7.625rem;
@@ -225,6 +226,8 @@ button:hover {
     }
     .content-wrapper{
       display: inline-flex;
+      padding-bottom: 0;
+      gap: 12rem;
     }
     .hours{
       display: inline-flex;
@@ -238,5 +241,24 @@ button:hover {
     }
     .hours p{
       font-size: 0.9375rem;
+    }
+    .card:nth-child(2) {
+      background: var(--play-background) url(/images/icon-play.svg) no-repeat 14rem -1rem;
+    }
+    
+    .card:nth-child(3) {
+      background: var(--study-background) url(/images/icon-study.svg) no-repeat 14rem -1rem;
+    }
+    
+    .card:nth-child(4) {
+      background: var(--exercise-background) url(/images/icon-exercise.svg) no-repeat 14rem -0.5rem;
+    }
+    
+    .card:nth-child(5) {
+      background: var(--social-background) url(/images/icon-social.svg)no-repeat 15rem -1rem;
+    }
+    
+    .card:nth-child(6) {
+      background: var(--self-care-background) url(/images/icon-self-care.svg)no-repeat 15rem -1rem;
     }
   }
