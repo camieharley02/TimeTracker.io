@@ -184,6 +184,8 @@ button:hover {
 @media (min-width: 320px) and (max-width: 420px) {
   .container{
     display: block;
+    margin: 70px 0;
+    height: 82rem;
   }  
   .profile{
     width: 20.4375rem;
